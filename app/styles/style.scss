@@ -4,6 +4,7 @@ $namecard-primary-color: #005D4D;
 $namecard-secondary-color: #2E6B73;
 $namecard-img-border: #39766D;
 $font-family: 'Open Sans', sans-serif, 'Helvetica';
+$icon-bottom: 30px;
 
 body {
 	font-family: $font-family;
@@ -24,7 +25,11 @@ body {
 		background: linear-gradient($namecard-primary-color, $namecard-secondary-color); /* Standard syntax */
 		
 		.personalInfo {
-			padding-top: 100px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -$icon-bottom;
+			transform: translate(-50%, -50%);
 			text-align: center;
 		}
 		
@@ -64,7 +69,8 @@ body {
 		.downloadBtn:hover {
 			color: white;
 			background-color: Transparent;
-			transition: background-color 0.2s ease-in;
+			transition: background-color 0.3s ease-in,
+						color 0.3s ease-in;;
 		}
 		
 		.contactInfo {
@@ -72,7 +78,7 @@ body {
 			bottom:0px;
 			width:100%; 
     		text-align: center;
-    		margin-bottom: 30px;
+    		margin-bottom: $icon-bottom;
 
     		li {
     			display: inline;
