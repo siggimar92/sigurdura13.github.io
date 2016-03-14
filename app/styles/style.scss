@@ -1,0 +1,101 @@
+$navbar-height: 50px;
+$namecard-height: 600px;
+$namecard-primary-color: #005D4D;
+$namecard-secondary-color: #2E6B73;
+$namecard-img-border: #39766D;
+$font-family: 'Open Sans', sans-serif, 'Helvetica';
+
+body {
+	font-family: $font-family;
+	#namecard {
+		/*height: $namecard-height;
+		width: 100%;*/
+
+		position: fixed; 
+		top: 0; 
+		left: 0; 
+		min-width: 100%;
+		min-height: 100%;
+
+		background: $namecard-primary-color; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient($namecard-primary-color, $namecard-secondary-color); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient($namecard-primary-color, $namecard-secondary-color); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient($namecard-primary-color, $namecard-secondary-color); /* For Firefox 3.6 to 15 */
+		background: linear-gradient($namecard-primary-color, $namecard-secondary-color); /* Standard syntax */
+		
+		.personalInfo {
+			padding-top: 100px;
+			text-align: center;
+		}
+		
+		img {
+			height: 200px;
+			border: 3px solid $namecard-img-border;
+			border-radius: 50%;
+		}
+
+		.nameDiv {
+			margin-top: 40px;
+
+			.fullName {
+				color: white;
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 35px;
+				letter-spacing: 4px;
+				padding: 10px;
+				/* border-top: 3px solid;
+				border-bottom: 3px solid; */
+			}
+		}
+
+		.downloadBtn {
+			margin-top: 30px;
+			color: $namecard-primary-color;
+			font-size: 24px;
+			font-weight: 700;
+			padding: 10px 18px 10px 18px;
+			background-color: white;
+			background-repeat:no-repeat;
+			border: 2px solid white;
+			border-radius: 5px;
+		}
+
+		.downloadBtn:hover {
+			color: white;
+			background-color: Transparent;
+			transition: background-color 0.2s ease-in;
+		}
+		
+		.contactInfo {
+			position:fixed;
+			bottom:0px;
+			width:100%; 
+    		text-align: center;
+    		margin-bottom: 30px;
+
+    		li {
+    			display: inline;
+    		}
+
+    		li a {
+    			text-decoration: none;
+    		}
+
+			i {
+				color: white;
+				font-size: 30px;
+				margin: 0 15px 0 15px;
+			}
+
+			.email {
+				font-size: 27px;
+			}
+
+			.github {
+				font-size: 32px;
+			}
+		}
+		
+	}
+}
