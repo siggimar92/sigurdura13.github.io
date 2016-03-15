@@ -9,8 +9,6 @@ $icon-bottom: 30px;
 body {
 	font-family: $font-family;
 	#namecard {
-		/*height: $namecard-height;
-		width: 100%;*/
 
 		position: fixed; 
 		top: 0; 
@@ -31,6 +29,11 @@ body {
 			margin-top: -$icon-bottom;
 			transform: translate(-50%, -50%);
 			text-align: center;
+			-webkit-animation-name: fadeIn; /* Chrome, Safari, Opera */
+			-webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+			animation-name: fadeIn;
+			animation-duration: 2s;
+
 		}
 		
 		img {
@@ -77,16 +80,12 @@ body {
 			position:fixed;
 			bottom:0px;
 			width:100%; 
-    		text-align: center;
-    		margin-bottom: $icon-bottom;
-
-    		li {
-    			display: inline;
-    		}
-
-    		li a {
-    			text-decoration: none;
-    		}
+			text-align: center;
+			margin-bottom: $icon-bottom;
+			-webkit-animation-name: slideUp; /* Chrome, Safari, Opera */
+			-webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+			animation-name: slideUp;
+			animation-duration: 1s;
 
 			i {
 				color: white;
@@ -103,5 +102,50 @@ body {
 			}
 		}
 		
+	}
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slideUp {
+	0% {
+		bottom: -100px;
+		opacity: 0;
+	}
+	100% {
+		bottom: 0px; 
+		opacity:1;
+	}
+}
+
+/* Standard syntax */
+@keyframes slideUp {
+	0% {
+		bottom: -100px;
+		opacity: 0;
+	}
+	100% {
+		bottom: 0px; 
+		opacity:1;
+	}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity:1;
 	}
 }
