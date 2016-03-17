@@ -3,13 +3,13 @@ $namecard-height: 600px;
 $namecard-primary-color: #005D4D;
 $namecard-secondary-color: #2E6B73;
 $namecard-img-border: #39766D;
-$font-family: 'Open Sans', sans-serif, 'Helvetica';
 $icon-bottom: 30px;
+$font-family: "Open Sans", sans-serif;
 
 body {
 	font-family: $font-family;
+		
 	#namecard {
-
 		position: fixed; 
 		top: 0; 
 		left: 0; 
