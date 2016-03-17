@@ -1,5 +1,5 @@
 {
-  "name": "ls-forecourt-health",
+  "name": "siggimar.me",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://sigurdura13@bitbucket.org/ls-lokaverkefni/ls-forecourt-health.git"
+    "url": "git+https://github.com/sigurdura13/sigurdura13.github.io"
   },
-  "author": "LS Retail by Arnar Dori Asgeirsson, Asgeir Dadi Thorisson, Hafthor Snaer Thorsson and Sigurdur Mar Atlason",
+  "author": "Sigurdur Mar Atlason",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/ls-lokaverkefni/ls-forecourt-health#readme",
+  "homepage": "siggimar.me",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
@@ -26,9 +26,6 @@
   },
   "dependencies": {
     "angular": "^1.5.0",
-    "angular-route": "^1.5.0",
-    "angular-ui-bootstrap": "^1.2.4",
-    "bootstrap": "^3.3.6",
     "express": "^4.13.4"
   }
 }
