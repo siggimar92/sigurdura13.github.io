@@ -120,6 +120,38 @@ body {
 	}
 }
 
+@media screen and (max-width:640px){
+	img {
+		height: 150px !important;
+	}
+	
+	.fullName {
+		font-size: 20px !important;
+	}
+
+	.downloadBtn {
+		font-size: 15px !important;
+	}
+}
+
+@media screen and (min-width:320px) and (max-width: 480px){
+	img {
+		height: 120px !important;
+	}
+	
+	.fullName {
+		font-size: 15px !important;
+	}
+
+	.downloadBtn {
+		font-size: 12px !important;
+	}
+
+	i {
+		font-size: 20px !important;
+	}
+}
+
 /* Chrome, Safari, Opera */
 @-webkit-keyframes slideUp {
 	from {
